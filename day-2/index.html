@@ -4,9 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coronavirus in India</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="container"></div>
+    <div id="navbar">
+        <div id="leftS">
+            <a href="index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/TATA_1mg_Logo.svg/2560px-TATA_1mg_Logo.svg.png" alt="logo">  
+            </a>
+        </div>
+        <div id="midS">
+            <ul>
+                <li><a href="">MEDICINE</a></li>
+                <li><a href="">LAB TESTS</a><span class="save">SAFE</span></li>
+                <li><a href="">CONSULT DOCTORS</a></li>
+                <li> <a href="">COVID-19</a></li>
+                <li> <a href="">AYURVEDA</a></li>
+                <li> <a href="">CORE-PLAN</a><span class="save">SAVE MORE</span></li>
+            </ul>
+        </div>
+        <div id="rightS">
+           <ul>
+            <li>
+                <a href="">Login</a>
+                <span class="seperater">|</span>
+                <a href="">Sign Up</a>
+            </li>
+            <li>
+               <a href=""><span id="offer">Offers</span></a>
+            </li>
+            <li id="picture">
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjEuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMDgwOTA5O30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTE1LjE0LDIwLjU5Yy0wLjQzLDAtMC43OS0wLjM3LTAuNzktMC44MnMwLjM1LTAuODIsMC43OS0wLjgyYzAuNDMsMCwwLjc5LDAuMzcsMC43OSwwLjgyCglTMTUuNTgsMjAuNTksMTUuMTQsMjAuNTl6IE0xNS4xNCwyMi4yM2MxLjMsMCwyLjM2LTEuMSwyLjM2LTIuNDZzLTEuMDYtMi40Ni0yLjM2LTIuNDZjLTEuMywwLTIuMzYsMS4xLTIuMzYsMi40NgoJUzEzLjg0LDIyLjIzLDE1LjE0LDIyLjIzeiBNNS43MiwyMC41OWMtMC40MywwLTAuNzktMC4zNy0wLjc5LTAuODJzMC4zNS0wLjgyLDAuNzktMC44MmMwLjQzLDAsMC43OSwwLjM3LDAuNzksMC44MgoJUzYuMTUsMjAuNTksNS43MiwyMC41OXogTTUuNzIsMjIuMjNjMS4zLDAsMi4zNi0xLjEsMi4zNi0yLjQ2cy0xLjA2LTIuNDYtMi4zNi0yLjQ2cy0yLjM2LDEuMS0yLjM2LDIuNDZTNC40MSwyMi4yMyw1LjcyLDIyLjIzegoJIE0xNS4zMiwxNC44Nkg0LjkzYy0wLjQzLDAtMC43OSwwLjM3LTAuNzksMC44MmMwLDAuNDUsMC4zNSwwLjgyLDAuNzksMC44MmgxMWMwLjM2LDAsMC42Ny0wLjI2LDAuNzYtMC42MmwyLjk5LTEyLjQ3aDIuNTMKCWMwLjQzLDAsMC43OS0wLjM3LDAuNzktMC44MnMtMC4zNS0wLjgyLTAuNzktMC44MmgtMy4xNGMtMC4zNywwLTAuNjgsMC4yNi0wLjc2LDAuNjJMMTUuMzIsMTQuODZ6Ii8+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik01LjgzLDExLjU5TDMsNS4wNGgxMS4zNmMwLjQzLDAsMC43OS0wLjM3LDAuNzktMC44MnMtMC4zNS0wLjgyLTAuNzktMC44MkgxLjc5Yy0wLjU3LDAtMC45NSwwLjYxLTAuNzIsMS4xNQoJbDMuNTQsOC4xOGMwLjEyLDAuMjksMC40LDAuNDgsMC43MiwwLjQ4aDEwLjYxYzAuNDMsMCwwLjc5LTAuMzcsMC43OS0wLjgycy0wLjM1LTAuODItMC43OS0wLjgySDUuODN6Ii8+Cjwvc3ZnPgo=" alt="cart">
+            </li>
+            <li>
+                <a href="">
+                    <span id="help">Need Help?</span>
+                </a>
+            </li>
+           </ul>
+        </div>
+    </div>
+    <div id="bottom_navbar">
+        <div id="location">
+            <div id="searchBar">
+                <form action="">
+                    <div><span id="map-marker"><img src="https://flyclipart.com/thumb2/maps-and-location-icons-for-free-download-22985.png" alt=""></span></div>
+                    <input type="location" value="New Delhi" >
+                   <input type="text" placeholder="Search for Medicines and Health Products">
+                   <div><span id="search"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1200px-Vector_search_icon.svg.png" alt=""></span></div>
+                </form>
+            </div>
+            <div id="deal">
+                <div>
+                    <span>QUICK BUY! Get 25% off on medicines</span>
+                    <span id="quickorder">Quick order</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- BODYY=============================================================================== -->
+    <div id="container">
+       <div>
+        <h1>Combating Coronavirus <br> in India</h1>
+        <p>As we are staring at a potential rise of coronavirus in India, <b>testing  tracing </b> and <b> treating</b> is the ideal way of curbing this spread. Testing on time helps provide early treatment which, in turn, prevents the spread to your loved ones and others around you.</p>
+        <h1 class="header-hr"></h1>
+        <p id="call">Experiencing COVID-like symptoms? To book a COVID-19 test at home, call on</p>
+        <h1>1800-212-2353</h1>
+       </div>
+       <div>
+        <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/img-head.png" alt="">
+       </div>
+    </div>
+    <!-- body----PCR--test================================================================================== -->
+    <div id="bag">
+        <div>
+            <h1>COVID-19 RT-PCR test</h1>
+            <div class="banner">Gold standard test to detect active coronavirus infection</div>
+             <div id="btn-txt">
+                <button><span> BOOK NOW</span></button>
+            </div>
+        </div>
+        <div>
+            <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/rtpcr.png" alt="">
+        </div>
+    </div>
+    <div>
+        <h1>COVID Essentials: Everything you need</h1>
+    </div>
+    <div id="Tickets">
+        <div>
+            <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/cold-cough.png" alt="">
+        </div>
+        <div>
+            <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/track-your-vitals.png" alt="">            
+        </div>
+        <div>
+            <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/hand-wash.png" alt="">
+        </div>
+        <div>
+            <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/mask&face.png" alt="">
+        </div>
+        <div>
+            <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/immunity.png" alt="">
+        </div>
+        <div>
+            <img src="https://marketing-compaigns.s3.ap-south-1.amazonaws.com/emailer/Corona_landing_page/disinfectants.png" alt="">
+        </div>
+    </div>
+    <div id=""></div>
 </body>
 </html>
